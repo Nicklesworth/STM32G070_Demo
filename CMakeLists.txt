@@ -16,8 +16,8 @@ add_executable(DemoProject.elf
     src/sysmem.c
     src/system.c
     src/main.cpp
-    STM32CubeG0/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c
-    STM32CubeG0/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c
+    lib/sdk/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c
+    lib/sdk/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c
 )
 
 # ------------------------------------------------------------------------------
@@ -25,11 +25,11 @@ add_executable(DemoProject.elf
 # ------------------------------------------------------------------------------
 target_include_directories(DemoProject.elf PRIVATE
     inc
-    General_Library/common
-    MCU_Library/common
-    STM32CubeG0/Drivers/CMSIS/Device/ST/STM32G0xx/Include
-    STM32CubeG0/Drivers/CMSIS/Include
-    STM32CubeG0/Drivers/STM32G0xx_HAL_Driver/Inc
+    lib/common
+    lib/mcu/common
+    lib/sdk/Drivers/CMSIS/Device/ST/STM32G0xx/Include
+    lib/sdk/Drivers/CMSIS/Include
+    lib/sdk/Drivers/STM32G0xx_HAL_Driver/Inc
 )
 
 # ------------------------------------------------------------------------------

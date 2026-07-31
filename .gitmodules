@@ -1,0 +1,9 @@
+[submodule "lib/common"]
+	path = lib/common
+	url = https://github.com/Nicklesworth/Common.git
+[submodule "lib/mcu"]
+	path = lib/mcu
+	url = https://github.com/Nicklesworth/STM32G0.git
+[submodule "lib/sdk"]
+	path = lib/sdk
+	url = https://github.com/STMicroelectronics/STM32CubeG0.git
