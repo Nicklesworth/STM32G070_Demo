@@ -15,7 +15,7 @@ add_executable(DemoProject.elf
     src/syscalls.c
     src/sysmem.c
     src/system.c
-    src/main.cpp
+    src/main.c
     lib/sdk/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c
     lib/sdk/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c
     lib/sdk/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c
