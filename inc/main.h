@@ -6,4 +6,6 @@
 #ifndef MAIN_H_
 #define MAIN_H_
 
+void Error_Handler(void);
+
 #endif // MAIN_H_
