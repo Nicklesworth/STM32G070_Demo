@@ -6,6 +6,8 @@
 #include "main.h"
 #include "debug_console.h"
 #include "local_types.h"
+#include "priorities.h"
+#include "systime.h"
 #include "stm32g0xx_hal.h"
 
 static void Clock_Init(void); 
@@ -14,7 +16,8 @@ int main(void)
  {
 	HAL_Init();
 	Clock_Init();
-  DebugConsole_Init(USART1);
+	SysTime_Init(TIM6, TIM6_IRQn, SYSTIMER_IRQ_PRIORITY);
+	DebugConsole_Init(USART1);
 	while(1);
  }
 

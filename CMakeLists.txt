@@ -17,11 +17,14 @@ add_executable(DemoProject.elf
     src/sysmem.c
     src/system.c
     src/stm32g0xx_hal_msp.c
+    lib/mcu/common/systime.c
     lib/mcu/debug_console/debug_console.c
+    lib/mcu/timers/timer_helpers.c
     lib/sdk/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c
     lib/sdk/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c
     lib/sdk/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c
     lib/sdk/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c
+    lib/sdk/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c
     lib/sdk/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c
 )
 
@@ -33,6 +36,7 @@ target_include_directories(DemoProject.elf PRIVATE
     lib/common
     lib/mcu/common
     lib/mcu/debug_console
+    lib/mcu/timers
     lib/sdk/Drivers/CMSIS/Device/ST/STM32G0xx/Include
     lib/sdk/Drivers/CMSIS/Include
     lib/sdk/Drivers/STM32G0xx_HAL_Driver/Inc
