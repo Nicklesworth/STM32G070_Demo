@@ -14,7 +14,7 @@ int main(void)
  {
 	HAL_Init();
 	Clock_Init();
-  DebugConsole_Init();
+  DebugConsole_Init(USART1);
 	while(1);
  }
 

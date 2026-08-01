@@ -12,10 +12,11 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # ------------------------------------------------------------------------------
 add_executable(DemoProject.elf
     src/startup.s
+    src/main.c
     src/syscalls.c
     src/sysmem.c
     src/system.c
-    src/main.c
+    src/stm32g0xx_hal_msp.c
     lib/mcu/debug_console/debug_console.c
     lib/sdk/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c
     lib/sdk/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c
