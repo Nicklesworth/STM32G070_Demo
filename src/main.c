@@ -4,6 +4,7 @@
  */
 
 #include "main.h"
+#include "debug_console.h"
 #include "local_types.h"
 #include "stm32g0xx_hal.h"
 
@@ -13,6 +14,7 @@ int main(void)
  {
 	HAL_Init();
 	Clock_Init();
+  DebugConsole_Init();
 	while(1);
  }
 
