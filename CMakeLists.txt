@@ -17,8 +17,8 @@ add_executable(DemoProject.elf
     src/sysmem.c
     src/system.c
     src/stm32g0xx_hal_msp.c
-    lib/mcu/common/systime.c
     lib/mcu/debug_console/debug_console.c
+    lib/mcu/timers/systime.c
     lib/mcu/timers/timer_helpers.c
     lib/sdk/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c
     lib/sdk/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c
@@ -33,8 +33,9 @@ add_executable(DemoProject.elf
 # ------------------------------------------------------------------------------
 target_include_directories(DemoProject.elf PRIVATE
     inc
-    lib/common
-    lib/mcu/common
+    lib/common/general
+    lib/common/structures
+    lib/mcu/general
     lib/mcu/debug_console
     lib/mcu/timers
     lib/sdk/Drivers/CMSIS/Device/ST/STM32G0xx/Include
